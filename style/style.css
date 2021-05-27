@@ -347,21 +347,19 @@ footer .footer-80{
 }
 .confirmation{
     display: none;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
-    padding-bottom: 100%;
+    padding-left: 450px;
+    padding-top: 100px;
     background: rgba(8, 65, 84, 0.62);
 }
 .confirmation .card-confir{
+    display: inline-block;
     border-radius: 5px;
-    width: auto;
-    height: auto;
-    position: absolute;
+    width: 400.21px;
+    height: 500px;
     background-color: var(--d);
     margin: 10px;
 }
@@ -374,6 +372,7 @@ footer .footer-80{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 45px;
+    padding-top: 70px;
 }
 .confirmation .confir-icon{
     display: flex;
@@ -386,4 +385,5 @@ footer .footer-80{
 .confirmation .confir-img>img{
     width: 100%;
     height: auto;
+    padding-top: 46px;
 }
