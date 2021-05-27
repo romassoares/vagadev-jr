@@ -13,7 +13,12 @@ const purchase = event => {
     modal.style.display = 'block'
     event.innerText = 'COMPRADO!'
 
-    event.setAttribute('style', "background-image: url('../svgs/image_6-removebg-preview 1.svg'); background-position: right top;background-repeat: no-repeat; background-color: var(--a)")
+    const img = document.createElement('img')
+    img.setAttribute('src', '../svgs/image_6-removebg-preview 1.svg')
+    img.style = 'border: none; margin-top: -45px;position:absolute '
+    event.appendChild(img)
+
+    event.setAttribute('style', " background-color: var(--a); border: none; ")
     badge()
     setTimeout(() => { document.addEventListener('click', handleClickOutside, false) }, 200);
 }
