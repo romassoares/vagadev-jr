@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Front-end JR</title>
+        <link rel="stylesheet" type="text/css" href="../style/style.css" />
+        <link rel="stylesheet" type="text/css" href="../style/style-mobile.css" />
+    </head>
+
+    <body>
+
+        <section>
+            <div class="container">
+                <header>
+                    <nav>
+                        <div class="logo">
+                            <input type="checkbox" name="" id="check">
+                            <img id="img-hamburger" src="../svgs/icon_hamburguer.svg" />
+                            <div class="triangulo"></div>
+                            <ul class="menu">
+                                <div class="col">
+                                    <li><strong><a href="#">Luta</a></strong></li>
+                                    <li><a href="#" class="active">Mortal Kombat</a></li>
+                                    <li><a href="#">Smash Bros</a></li>
+                                    <li><a href="#">Killer Instict</a></li>
+                                    <li><a href="#">DBZ Kakarot</a></li>
+                                </div>
+                                <div class="col">
+                                    <li><strong><a href="#">Ação / Aventura</a></strong></li>
+                                    <li><a href="#">GTA V</a></li>
+                                    <li><a href="#">Tomb Raider</a></li>
+                                    <li><a href="#">HALO</a></li>
+                                    <li><a href="#">Call of Duty</a></li>
+                                </div>
+                                <div class="col">
+                                    <li><strong><a href="#">Corrida</a></strong></li>
+                                    <li><a href="#">NEED For SPEED</a></li>
+                                    <li><a href="#">Forza Horizon</a></li>
+                                </div>
+                            </ul>
+                            <a href="#">
+                                <img class="icon_logo" src="../img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="../svgs/paper-plane.svg" alt="">
+                                    <span>contato</span>
+                                </a>
+                            </li>
+                            <hr />
+                            <li>
+                                <a href="#">
+                                    <img src="../svgs/search-solid.svg" alt="">
+                                    <span>buscar</span>
+                                </a>
+                            </li>
+                            <hr />
+                            <li>
+                                <a href="#">
+                                    <img src="../svgs/shopping-bag-solid.svg" alt="">
+                                    <span id="badge" class="badge"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="carousel">
+                        <div class="item">
+                            <div class="description">
+                                <p id='descri-tit' class="title"></p>
+                                <p class="price">R$ 299<span>,99</span></p>
+                                <p class="descri" id="descri-des">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <h2 id="title-img-product">
+                            </h2>
+                            <div class="items-controls">
+                                <p id="paginate"></p>
+                                <div class="buttons">
+                                    <img id="left" src="../svgs/angle-left-solid.svg" alt="">
+                                    <img id="right" src="../svgs/angle-right-solid.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+        <!-- section cards -->
+        <div class="body">
+            <section id="cards">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/zelda_banner.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="space"></div>The Legend of Zelda - Breath of th wild
+                            ----------------------------------
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/sekiro_banner.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="space"></div>SEKIRO - Shadows die twice ----------------------------------
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- spotlight -->
+            <section id="spotlight">
+                <div class="row-title">
+                    <img src="../img/Shelf Title.png" alt="">
+                </div>
+                <div class="row " id="">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/product-outriders.jpg" alt="">
+                        </div>
+                        <div class="description-product">
+                            <p class="title">Outriders</p>
+                            <p class="price">R$ 200,00</p>
+                            <button id="1" onclick="purchase(this)">COMPRAR</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/product-cyberpunk2077.jpg" alt="">
+                        </div>
+                        <div class="description-product">
+                            <p class="title">CYBERPUNK 2077</p>
+                            <p class="price">R$ 200,00</p>
+                            <button id="2" onclick="purchase(this)">COMPRAR</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/product-donkey-kong-country-tropical-freeze.jpg" alt="">
+                        </div>
+                        <div class="description-product">
+                            <p class="title">Donkey Kong Country Tropical
+                                Freeze</p>
+                            <p class="price">R$ 200,00</p>
+                            <button id="3" onclick="purchase(this)">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-20">
+                    <img src="../img/logo_header 1.png" alt="">
+                </div>
+                <div class="footer-80">
+                    Agência N1 - Todos os direitos reservados
+                </div>
+            </footer>
+        </div>
+        <div id="confir" class="confirmation">
+            <div class="card-confir">
+                <div class="confir-icon" onclick="close()">
+                    <img id="img-confir" src="../svgs/close_btn.svg" alt="">
+                </div>
+                <div class="confir-descr">
+                    ---- Pedido realizado com sucesso! ----
+                </div>
+                <div class="confir-img">
+                    <img src="../svgs/image_6-removebg-preview 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!-- -->
+        <script src="../functions.js/index.js"></script>
+    </body>
+
+</html>
