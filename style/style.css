@@ -151,7 +151,7 @@ header section{
 header .carousel .item{
     position: absolute;
     top :250px;
-    left: 950px
+    left: 950px;
 }
 .description{
     position:absolute;
@@ -181,7 +181,8 @@ header .carousel .item{
     line-height: 25px;
 }
 /* --------  carousel    ---------- */
-.carousel{
+header .carousel{
+    height: 100%;
     width: 100%;
 }
 .control{
@@ -227,7 +228,6 @@ header .carousel .item{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 /* section cards */
 #cards .row{
     display: flex;
@@ -351,6 +351,7 @@ header .carousel .item{
 /* footer */
 footer{
     display: flex;
+    padding-bottom: 0;
     flex-direction: row;
     bottom: 0px;
     width: 100%;

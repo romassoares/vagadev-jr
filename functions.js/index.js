@@ -134,7 +134,6 @@ imgcheck.onclick = function () {
         document.querySelector('.logo>.triangulo').style.display = 'flex'
         if (window.screen.availWidth <= 800) {
             document.querySelector('.carousel').style.display = 'none'
-            document.querySelector('.body').style.display = 'none'
         }
     }
 }
