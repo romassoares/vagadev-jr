@@ -1,6 +1,7 @@
 @media (max-width: 1430px)
 {
     header .carousel .item{
+        display: flex;
         position: absolute;
         top :250px;
         left: 760px
@@ -226,7 +227,6 @@
         display: block;
     }
 }
-
 @media (max-width: 800px)
 {  
     .logo .menu .x{

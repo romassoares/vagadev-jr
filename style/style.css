@@ -149,11 +149,12 @@ header section{
     background: royalblue !important;
 }
 header .carousel .item{
-    position: absolute;
     top :250px;
     left: 950px;
 }
 .description{
+    display: flex;
+    flex-direction: column;
     position:absolute;
     width: 420px;
     text-align: right;
@@ -182,6 +183,7 @@ header .carousel .item{
 }
 /* --------  carousel    ---------- */
 header .carousel{
+    display: flex;
     height: 100%;
     width: 100%;
 }
@@ -289,7 +291,6 @@ header .carousel{
 }
 #spotlight .carousel .col{
     display: none;
-    /* border: #3EC6E0 solid; */
 }
 #spotlight .carousel .row .card{
     flex: none;

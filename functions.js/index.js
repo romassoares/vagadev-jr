@@ -118,22 +118,23 @@ function startSlideShow() {
 }
 startSlideShow();
 // fim carousel
+// menu
 
 const imgcheck = document.querySelector('#img-hamburger')
-
 const check = document.querySelector('#check')
 
 imgcheck.onclick = function () {
     if (check.checked == true) {
         check.checked = false
-        document.querySelector('.logo>.menu').style.display = 'none'
-        document.querySelector('.logo>.triangulo').style.display = 'none'
+        document.querySelector('.logo .menu').style.display = 'none'
+        document.querySelector('.logo .triangulo').style.display = 'none'
     } else {
         check.checked = true
-        document.querySelector('.logo>.menu').style.display = 'flex'
-        document.querySelector('.logo>.triangulo').style.display = 'flex'
+        document.querySelector('.logo .menu').style.display = 'flex'
+        document.querySelector('.logo .triangulo').style.display = 'flex'
         if (window.screen.availWidth <= 800) {
-            document.querySelector('.carousel').style.display = 'none'
+            document.querySelector('.container .carousel').style.display = 'flex'
+            document.querySelector('.container').style.display = 'flex'
         }
     }
 }
@@ -143,7 +144,7 @@ modal.onclick = function () {
     modal.style.display = "none"
     document.querySelector('.logo>.triangulo').style.display = 'none'
 }
-
+// fim menu
 // carousel card products
 const carousel = document.querySelector('#row-caroucel-product')
 const carouselFunction = val => {
