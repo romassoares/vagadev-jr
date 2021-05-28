@@ -15,10 +15,10 @@ const purchase = event => {
 
     const img = document.createElement('img')
     img.setAttribute('src', '../svgs/image_6-removebg-preview 1.svg')
-    img.style = 'border: none; margin-top: -45px;position:absolute '
+    img.style = 'border: none; margin-top: -30px; margin-left: 50px ; position:relative '
     event.appendChild(img)
 
-    event.setAttribute('style', " background-color: var(--a); border: none; ")
+    event.setAttribute('style', " background-color: var(--a); border: none;")
     badge()
     setTimeout(() => { document.addEventListener('click', handleClickOutside, false) }, 200);
 }
@@ -144,3 +144,22 @@ modal.onclick = function () {
     modal.style.display = "none"
     document.querySelector('.logo>.triangulo').style.display = 'none'
 }
+
+// carousel card products
+const carousel = document.querySelector('#row-caroucel-product')
+const carouselFunction = val => {
+    if (val == 1) {
+        carousel.scrollBy(-300, 0)
+    } else {
+        carousel.scrollBy(300, 0)
+    }
+}
+const plus1 = document.querySelector('#plus-1')
+plus1.onclick = () => {
+    carouselFunction(0)
+}
+const plus0 = document.querySelector('#plus-0')
+plus0.onclick = () => {
+    carouselFunction(1)
+}
+

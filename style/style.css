@@ -35,6 +35,7 @@ nav .logo{
     width: 100px;
 }
 nav .logo img{
+    position: relative;
     height: 35px;
     margin-right: 30px;
     border-right: 20px;
@@ -53,6 +54,16 @@ nav .logo .icon_logo{
     top: 51px;
     background: var(--b);
     transform: rotate(135deg);
+}
+.logo .menu .x{
+    display: none;
+    font-size: 40px;
+    line-height: 35px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    margin-left: 9px;
 }
 .logo .menu{
     position: absolute;
@@ -101,7 +112,11 @@ nav ul{
     display: flex;
     font-weight: 500;
 }
-
+.logo .menu .hr{
+    display: none;
+    width: 100%;
+    height: 1px solid black;
+}
 nav ul hr{
     height: 100%;
     border: 1px solid #ffffff;
@@ -112,6 +127,7 @@ nav ul li a{
     font-size: 14px;
     line-height: 16px;
     padding: 5px;
+    position: relative;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -261,39 +277,51 @@ header .carousel .item{
 /*  */
 #spotlight .row{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 95vw;
 }
-#spotlight .row .card{
+#spotlight .carousel{
+    display: flex;
+    flex-direction: row;
+}
+#spotlight .carousel .col{
+    display: none;
+    /* border: #3EC6E0 solid; */
+}
+#spotlight .carousel .row .card{
+    flex: none;
     height: auto;
     border: none;
     box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
     margin: 60px;
 }
-#spotlight .row .card .card-img{
+#spotlight .carousel .row .card .card-img{
     max-width: 350px;
     height: auto;
     border-bottom: 1px solid var(--b);
 }
-#spotlight .row .card .card-img>img{
+#spotlight .carousel .row .card .card-img>img{
     width: 100%;
     height: auto;
 }
-#spotlight .row .card .description-product{
+#spotlight .carousel .row .card .description-product{
     display: flex;
     flex-direction: column;
     background: var(--e);
     border-radius: 0px 0px 10px 10px;
     padding: 15px;
 }
-#spotlight .row .card .description-product .title{
+#spotlight .carousel .row .card .description-product .title{
     font-size: 14px;
     color: var(--a);
     line-height: 16px;
     margin: 10px;
 }
-#spotlight .row .card .description-product .price{
+#spotlight .carousel .row .card .description-product .price{
     font-size: 18px;
     color: var(--a);
     line-height: 21px;
@@ -301,7 +329,9 @@ header .carousel .item{
     margin: 10px;
     margin-bottom: 20px;
 }
-#spotlight .row .card .description-product>button{
+#spotlight .carousel .row .card .description-product>button{
+    display: flex;
+    align-items: center;
     width: 240px;
     height: 52px;
     background: var(--b);
@@ -310,8 +340,9 @@ header .carousel .item{
     font-size: 18px;
     line-height: 21px;
     margin: 0 auto;
+    padding-left: 20px;
 }
-#spotlight .row .card .description-product>button:hover{
+#spotlight .carousel .row .card .description-product>button:hover{
     background:var(--a);
     border: 1px solid var(--b);
     font-size: 19px;

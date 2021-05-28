@@ -20,6 +20,7 @@
                             <img id="img-hamburger" src="../svgs/icon_hamburguer.svg" />
                             <div class="triangulo"></div>
                             <ul class="menu">
+                                <div class="x">x</div>
                                 <div class="col">
                                     <li><strong><a href="#">Luta</a></strong></li>
                                     <li><a href="#" class="active">Mortal Kombat</a></li>
@@ -27,6 +28,7 @@
                                     <li><a href="#">Killer Instict</a></li>
                                     <li><a href="#">DBZ Kakarot</a></li>
                                 </div>
+                                <hr class="hr" />
                                 <div class="col">
                                     <li><strong><a href="#">Ação / Aventura</a></strong></li>
                                     <li><a href="#">GTA V</a></li>
@@ -34,6 +36,7 @@
                                     <li><a href="#">HALO</a></li>
                                     <li><a href="#">Call of Duty</a></li>
                                 </div>
+                                <hr class="hr" />
                                 <div class="col">
                                     <li><strong><a href="#">Corrida</a></strong></li>
                                     <li><a href="#">NEED For SPEED</a></li>
@@ -119,38 +122,49 @@
                 <div class="row-title">
                     <img src="../img/Shelf Title.png" alt="">
                 </div>
-                <div class="row " id="">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="../img/product-outriders.jpg" alt="">
+
+                <div class="carousel">
+                    <div class="col">
+                        <img id="plus-0" src="../img/angle-left-solid.png" alt="">
+                    </div>
+                    <div class="row" id="row-caroucel-product">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="../img/product-outriders.jpg" alt="">
+                            </div>
+                            <div class="description-product">
+                                <p class="title">Outriders</p>
+                                <p class="price">R$ 200,00</p>
+                                <button id="1" onclick="purchase(this)">COMPRAR</button>
+                            </div>
                         </div>
-                        <div class="description-product">
-                            <p class="title">Outriders</p>
-                            <p class="price">R$ 200,00</p>
-                            <button id="1" onclick="purchase(this)">COMPRAR</button>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="../img/product-cyberpunk2077.jpg" alt="">
+                            </div>
+                            <div class="description-product">
+                                <p class="title">CYBERPUNK 2077</p>
+                                <p class="price">R$ 200,00</p>
+                                <button id="2" onclick="purchase(this)">COMPRAR</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="../img/product-donkey-kong-country-tropical-freeze.jpg" alt="">
+                            </div>
+                            <div class="description-product">
+                                <p class="title">Donkey Kong Country Tropical
+                                    Freeze</p>
+                                <p class="price">R$ 200,00</p>
+                                <button id="3" onclick="purchase(this)">COMPRAR</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="../img/product-cyberpunk2077.jpg" alt="">
-                        </div>
-                        <div class="description-product">
-                            <p class="title">CYBERPUNK 2077</p>
-                            <p class="price">R$ 200,00</p>
-                            <button id="2" onclick="purchase(this)">COMPRAR</button>
-                        </div>
+                    <div class="col">
+                        <img id="plus-1" src="../img/angle-right-solid.png" alt="">
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="../img/product-donkey-kong-country-tropical-freeze.jpg" alt="">
-                        </div>
-                        <div class="description-product">
-                            <p class="title">Donkey Kong Country Tropical
-                                Freeze</p>
-                            <p class="price">R$ 200,00</p>
-                            <button id="3" onclick="purchase(this)">COMPRAR</button>
-                        </div>
-                    </div>
+                </div>
+
             </section>
             <div id="confir" class="confirmation">
                 <div class="card-confir">
